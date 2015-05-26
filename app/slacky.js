@@ -15,15 +15,8 @@ function createWindow(destUrl) {
 			// Set the height and width and then rander it in the middle of the screen
 			bounds: {
 				width: width,
-				height: height,
-				left: Math.round((screen.availWidth - width) / 2),
-				top: Math.round((screen.availHeight - height) / 2)
+				height: height
 			},
-			// Minimum sizes
-			innerBounds: {
-				minWidth: width,
-				minHeight: height
-			}
 		}, function(createdWindow) {
 			createdWindow.contentWindow.onload = function() {
 				// Retrieve the webview element
